@@ -131,7 +131,7 @@ export class AuthService {
    */
   private generateAccessToken(userId: string): string {
     return jwt.sign({ userId }, config.jwtSecret, {
-      expiresIn: '15m',
+      expiresIn: config.jwtExpiresIn as jwt.SignOptions['expiresIn'],
     });
   }
 
@@ -140,7 +140,7 @@ export class AuthService {
    */
   private generateRefreshToken(userId: string): string {
     return jwt.sign({ userId }, config.jwtRefreshSecret, {
-      expiresIn: '7d',
+      expiresIn: config.jwtRefreshExpiresIn as jwt.SignOptions['expiresIn'],
     });
   }
 
