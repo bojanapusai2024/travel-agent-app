@@ -3,7 +3,7 @@
  */
 
 import dotenv from 'dotenv';
-import express from 'express';
+import express, { type Express } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import compression from 'compression';
@@ -20,7 +20,7 @@ import { setupSocketHandlers } from './sockets';
 dotenv.config();
 
 // Create Express app
-const app = express();
+const app: Express = express();
 const httpServer = createServer(app);
 
 // Create Socket.io server

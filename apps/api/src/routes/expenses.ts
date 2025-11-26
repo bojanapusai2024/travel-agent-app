@@ -2,12 +2,12 @@
  * Expense routes
  */
 
-import { Router } from 'express';
+import { Router, type Router as ExpressRouter } from 'express';
 
 import { ExpenseController } from '../controllers/expenses';
 import { authenticate } from '../middleware/auth';
 
-const router = Router();
+const router: ExpressRouter = Router();
 const expenseController = new ExpenseController();
 
 // All routes require authentication

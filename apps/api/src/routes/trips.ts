@@ -2,12 +2,12 @@
  * Trip routes
  */
 
-import { Router } from 'express';
+import { Router, type Router as ExpressRouter } from 'express';
 
 import { TripController } from '../controllers/trips';
 import { authenticate } from '../middleware/auth';
 
-const router = Router();
+const router: ExpressRouter = Router();
 const tripController = new TripController();
 
 // All routes require authentication

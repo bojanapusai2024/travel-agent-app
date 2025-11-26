@@ -19,7 +19,10 @@
       "@utils/*": ["./src/utils/*"],
       "@types/*": ["./src/types/*"],
       "@validators/*": ["./src/validators/*"]
-    }
+    },
+    "noPropertyAccessFromIndexSignature": false,
+    "declaration": false,
+    "declarationMap": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

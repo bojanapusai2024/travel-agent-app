@@ -3,6 +3,7 @@
  */
 
 import type { UserProfile, UserRole } from './user';
+import type { Budget } from './expense';
 
 /** Trip status enumeration */
 export type TripStatus = 'planning' | 'confirmed' | 'in_progress' | 'completed' | 'cancelled';

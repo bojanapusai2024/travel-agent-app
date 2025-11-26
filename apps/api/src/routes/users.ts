@@ -2,12 +2,12 @@
  * User routes
  */
 
-import { Router } from 'express';
+import { Router, type Router as ExpressRouter } from 'express';
 
 import { UserController } from '../controllers/users';
 import { authenticate } from '../middleware/auth';
 
-const router = Router();
+const router: ExpressRouter = Router();
 const userController = new UserController();
 
 // All routes require authentication

@@ -19,7 +19,9 @@
       "@utils/*": ["./src/utils/*"],
       "@types/*": ["./src/types/*"]
     },
-    "noEmit": true
+    "noEmit": true,
+    "types": ["vite/client"],
+    "noPropertyAccessFromIndexSignature": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

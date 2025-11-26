@@ -2,14 +2,14 @@
  * API routes
  */
 
-import { Router } from 'express';
+import { Router, type Router as ExpressRouter } from 'express';
 
 import authRoutes from './auth';
 import tripRoutes from './trips';
 import expenseRoutes from './expenses';
 import userRoutes from './users';
 
-export const router = Router();
+export const router: ExpressRouter = Router();
 
 // API version prefix
 const API_VERSION = '/v1';

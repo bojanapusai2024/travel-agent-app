@@ -2,13 +2,13 @@
  * Authentication routes
  */
 
-import { Router } from 'express';
+import { Router, type Router as ExpressRouter } from 'express';
 
 import { AuthController } from '../controllers/auth';
 import { validateRequest } from '../middleware/validation';
 import { loginSchema, registerSchema } from '../validators/auth';
 
-const router = Router();
+const router: ExpressRouter = Router();
 const authController = new AuthController();
 
 // POST /api/v1/auth/register

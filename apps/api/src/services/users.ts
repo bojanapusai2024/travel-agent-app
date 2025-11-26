@@ -2,8 +2,6 @@
  * User service
  */
 
-import { v4 as uuidv4 } from 'uuid';
-
 import type { UserProfile, UserPreferences } from '@travel-agent/shared';
 
 // In-memory stores (replace with database in production)
