@@ -1,0 +1,16 @@
+{
+  "name": "@travel-agent/config",
+  "version": "1.0.0",
+  "description": "Shared configurations for travel-agent-app",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./eslint": "./eslint/index.js",
+    "./typescript/base": "./typescript/base.json"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "typescript"
+  ]
+}

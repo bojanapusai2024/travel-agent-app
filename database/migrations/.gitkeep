@@ -1,0 +1,14 @@
+# Database Migrations
+
+This directory contains PostgreSQL database migrations.
+
+## Usage
+
+Migrations are managed using a migration tool (to be configured).
+
+## Creating Migrations
+
+Name migrations with a timestamp prefix:
+- `001_create_users_table.sql`
+- `002_create_trips_table.sql`
+- etc.
